@@ -25,7 +25,6 @@ class RulesClient:
             headers = {
                'Content-Type': 'application/xml' # Set content type to XML
             }
-         print(headers)
          req = request.Request(url, data, headers)
          response = request.urlopen(req)
          return response.read()
